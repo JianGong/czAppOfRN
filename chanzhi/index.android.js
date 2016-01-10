@@ -8,20 +8,23 @@ var React = require('react-native');
 var {
   AppRegistry,
   StyleSheet,
-  Image,
   Text,
   View,
 } = React;
 
-var reactnative = React.createClass({
+var chanzhi = React.createClass({
   render: function() {
-    var movie=MOCKED_MOVIES_DATA[0];
-
     return (
       <View style={styles.container}>
-        <Text>{movie.title}</Text>
-        <Text>{movie.year}</Text>
-        <Image source={{uri: movie.posters.thumbnail}} />
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit index.android.js
+        </Text>
+        <Text style={styles.instructions}>
+          Shake or press menu button for dev menu
+        </Text>
       </View>
     );
   }
@@ -45,9 +48,5 @@ var styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
-“var MOCKED_MOVIES_DATA = [
-  {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
-];”
 
-
-AppRegistry.registerComponent('reactnative', () => reactnative);
+AppRegistry.registerComponent('chanzhi', () => chanzhi);
