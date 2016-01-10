@@ -8,7 +8,7 @@ var {
     StyleSheet
 } = React;
 
-var FirstPageComponent = require('./FirstPageComponent');
+var FirstPageComponent = require('./Product');
 
 var SecondPageComponent = React.createClass({
     getInitialState: function() {
